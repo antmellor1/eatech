@@ -96,8 +96,6 @@ namespace EaTech.Core.Tests
         {
             input.SelectedNode = 100;
 
-            sut.GetDownstreamCustomers(input);
-
             var expectedResponse = new DownstreamCustomerResponseDTO
             {
                 TotalCustomers = 0,
