@@ -14,8 +14,8 @@ namespace EaTech.WebApi.Controllers
             _networkService = networkService;
         }
 
-        [HttpGet("downstreamCustomers")]
-        public async Task<IActionResult> GetDownstreamCustomers(DownstreamCustomerRequestDTO request)
+        [HttpPut("downstreamCustomers")]
+        public async Task<IActionResult> DownstreamCustomers(DownstreamCustomerRequestDTO request)
         {
             var response = _networkService.GetDownstreamCustomers(request);
             return Ok(response);    
