@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EaTech.Core.Models;
 
 namespace EaTech.Core.DTOs
 {
     public class DownstreamCustomerRequestDTO
     {
+        public Network Network { get; set; }
+        public int SelectedNode { get; set; }
     }
 }

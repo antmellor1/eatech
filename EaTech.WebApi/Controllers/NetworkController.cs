@@ -1,14 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EaTech.Core.DTOs;
+using EaTech.Core.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EaTech.WebApi.Controllers
 {
     [ApiController]
     public class NetworkController: Controller
     {
-        [HttpGet("downstreamCustomers")]
-        public async Task<IActionResult> GetDownstreamCustomers()
+        private INetworkService _networkService;
+        
+        public NetworkController(INetworkService networkService)
         {
+            _networkService = networkService;
+        }
 
+        [HttpGet("downstreamCustomers")]
+        public async Task<IActionResult> GetDownstreamCustomers(DownstreamCustomerRequestDTO request)
+        {
+            var response = _networkService.GetDownstreamCustomers(request);
+            return Ok(response);    
         }
     }
 }

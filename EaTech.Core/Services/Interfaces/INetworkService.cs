@@ -1,6 +1,9 @@
-﻿namespace EaTech.Core.Services.Interfaces
+﻿using EaTech.Core.DTOs;
+
+namespace EaTech.Core.Services.Interfaces
 {
-    public interface IGraphService
+    public interface INetworkService
     {
+        DownstreamCustomerResponseDTO GetDownstreamCustomers(DownstreamCustomerRequestDTO request);
     }
 }
