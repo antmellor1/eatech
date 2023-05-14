@@ -1,9 +1,9 @@
-using EaTech.Services;
-using EaTech.Services.Interfaces;
+using EaTech.Core.Services;
+using EaTech.Core.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddTransient<IGraphService, GraphService>();
+builder.Services.AddTransient<INetworkService, NetworkService>();
 
 var app = builder.Build();
 

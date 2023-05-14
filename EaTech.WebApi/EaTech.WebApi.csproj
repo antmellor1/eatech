@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EaTech.Services\EaTech.Services.csproj" />
+    <ProjectReference Include="..\EaTech.Services\EaTech.Core.csproj" />
   </ItemGroup>
 
 </Project>
