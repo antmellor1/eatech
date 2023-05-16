@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{23AB3843
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EaTech.Core.Tests", "tests\EaTech.Core.Tests\EaTech.Core.Tests.csproj", "{58430B9D-BB0D-4105-B1F2-4DEC8D22FD57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EaTech.WebApi.Tests", "tests\EaTech.Core.Tests\EaTech.WebApi.Tests\EaTech.WebApi.Tests.csproj", "{07678CDE-96E0-4FEC-B533-C17BFCCB7F8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +31,17 @@ Global
 		{58430B9D-BB0D-4105-B1F2-4DEC8D22FD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58430B9D-BB0D-4105-B1F2-4DEC8D22FD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58430B9D-BB0D-4105-B1F2-4DEC8D22FD57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07678CDE-96E0-4FEC-B533-C17BFCCB7F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07678CDE-96E0-4FEC-B533-C17BFCCB7F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07678CDE-96E0-4FEC-B533-C17BFCCB7F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07678CDE-96E0-4FEC-B533-C17BFCCB7F8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{58430B9D-BB0D-4105-B1F2-4DEC8D22FD57} = {23AB3843-61EE-4A6A-B722-4831A236F7CF}
+		{07678CDE-96E0-4FEC-B533-C17BFCCB7F8C} = {23AB3843-61EE-4A6A-B722-4831A236F7CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8044FC05-E611-4B2B-A22B-2B95BD00C8F7}

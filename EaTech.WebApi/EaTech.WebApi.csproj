@@ -11,7 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EaTech.Core\EaTech.Core.csproj" />
+    <ProjectReference Include="..\EaTech.Core\EaTech.Core.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Tests/EaTech.WebApi.Tests" />
   </ItemGroup>
 
 </Project>
